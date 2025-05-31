@@ -164,3 +164,4 @@ cython_debug/
 .vscode/
 cookies.json
 fingerprint.txt
+userinfo.csv
