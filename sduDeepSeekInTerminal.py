@@ -16,8 +16,7 @@ if os.path.exists("SDUTAIconfigs.toml"):
 else:
     sduid = input("SDU ID: ")
     password = getpass("Password: ")
-    fingerprint = input("Device fingerprint(none for random uuid): ")
-    configs = login(sduid, password, fingerprint)
+    configs = login(sduid, password)
     configs["online"] = False
     configs["reason"] = True
     cookies = configs["cookies"]
